@@ -51,8 +51,9 @@ gunicorn app:app
 ```
 
 and for render's default server configuration would need configuring for Render.
--GRADIO_SERVER_PORT to 10000
--GRADIO_SERVER_NAME to 0.0.0.0
+
+- GRADIO_SERVER_PORT to 10000
+- GRADIO_SERVER_NAME to 0.0.0.0
 
 ```
 interface = gr.Interface(fn=predict,  
