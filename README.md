@@ -63,10 +63,9 @@ interface = gr.Interface(fn=predict,
   server_name="0.0.0.0",
   css="footer {visibility: hidden}"
 )
-
 ```
 
-Then wait for the site to be live Happy Testing and Deploying
+Then wait for the site to be live Happy Testing and Deploying !
 
 
 
