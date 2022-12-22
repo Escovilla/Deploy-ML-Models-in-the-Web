@@ -19,12 +19,25 @@ Gradio is a powerful tool that allows you to easily deploy your machine learning
 ## Getting Started
 
 To get started with Gradio, you will need to install the library using pip:
-``` 
+
+```
 pip install gradio
-
-``
-
+```
 Next, you will need to define your model as a function, and pass it to the Interface class:
+```
+import gradio as gr
+
+def model(inputs):
+  # Your model code here
+  return output
+
+interface = gr.Interface(model, inputs=inputs, outputs=outputs)
+interface.launch()
+```
+You can then access your interface by visiting the URL displayed in the terminal.
+For more information on using Gradio, check out the documentation
+
+
 
 
 
