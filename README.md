@@ -37,6 +37,39 @@ interface.launch()
 You can then access your interface by visiting the URL displayed in the terminal.
 For more information on using Gradio, check out the documentation
 
+## Deploying to the web
+
+To get started with Render, simply log in to render.com and connect your repository. You will then be able to deploy your models with just a few clicks.
+
+You cant directly Deploy your app without a few settings like 
+the start command 
+
+
+
+```
+gunicorn app:app
+```
+
+and for render's default server configuration would need configuring for Render.
+-GRADIO_SERVER_PORT to 10000
+-GRADIO_SERVER_NAME to 0.0.0.0
+
+```
+interface = gr.Interface(fn=predict,  
+  inputs='sketchpad',
+  outputs=gr.outputs.Label(num_top_classes=1),  
+  server_port=10000, 
+  server_name="0.0.0.0",
+  css="footer {visibility: hidden}"
+)
+
+```
+
+Then wait for the site to be live Happy Testing and Deploying
+
+
+
+
 
 
 
