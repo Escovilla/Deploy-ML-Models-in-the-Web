@@ -16,6 +16,20 @@ Gradio is a powerful tool that allows you to easily deploy your machine learning
 - Secure: Gradio uses secure server-side processing to protect your model and data. Your model is never exposed to the client, ensuring that your intellectual property is safe.
 
 
+## Getting Started
+
+To get started with Gradio, you will need to install the library using pip:
+``` 
+pip install gradio
+
+``
+
+Next, you will need to define your model as a function, and pass it to the Interface class:
+
+
+
+
+
 
 
 
