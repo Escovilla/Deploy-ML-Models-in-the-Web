@@ -50,7 +50,7 @@ the start command
 gunicorn app:app
 ```
 
-and for render's default server configuration would need configuring for Render.
+configure gradio for default port and servername for Render.
 
 - GRADIO_SERVER_PORT to 10000
 - GRADIO_SERVER_NAME to 0.0.0.0
